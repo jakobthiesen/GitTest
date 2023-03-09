@@ -1,0 +1,170 @@
+
+What is git?
+
+Version control
+History etc.
+
+
+When to use git?
+Always use git, it is great for larger projects for file-sharing etc.
+
+
+
+
+How to use:
+install
+create a user on
+github, gitlab, gitbucket or somewhere else.
+These are the services (clouds) to be used, often github is used
+
+
+How to use it???
+
+Use it through terminal, often easier.
+
+creating a repo:
+git clone
+git init
+
+
+git clone:
+make a repo at the service used
+git clone:https://depot....
+
+SSH or HTTP can be used
+SSH is often easiest when a key has been set up.
+
+
+When creating a new repo at git it will guide you.
+
+
+
+git init:
+often couses problems on the first push, use clone instead.
+
+
+How to add files to git??
+This ofcourse requires files in the first place.
+
+To ad a file:
+git add fileName.py
+
+If it is a python file
+
+git add . 
+This adds the complete folder, for must parts, dont use this.
+
+git status
+This gives info on your branch, up-to-date and new files etc.
+
+If a wrong file have been added, rm can be used to remove it
+
+
+Next stage is to:
+commit -m "A comment here"
+Commit indicates that yes, i am now ready to proceed, a comment must alway follow.
+Once a commit is done, some info on file changes follows:
+
+
+Pushing:
+Always pull before this is done
+
+command:
+git push 
+
+
+
+
+git fetch:
+Get update from origin, tells you if there are updates, does not fecth them.
+
+
+
+
+git pull
+This command pulls what is in the cloud to your pc.
+
+
+
+
+Branches:
+
+git status will tell you what branch you are working in.
+
+you can swtich to a branch by:
+git checkout branchName
+
+command:
+git branch
+this tells you where you are
+
+git branch
+git branch branchName
+
+
+
+Pull request:
+This checks if you have some conflicts, same files etc, new files new code etc.
+Here you can set a reviewer, assign it to people etc.
+
+If there are conflicts, it will tell what files are conflicting, which file would you like to keep, down to code line.
+
+
+
+git log
+this will tell what commits have been performed,
+only indicates the short comments to the changes.
+
+
+command:
+git switch name
+This switches to a branch
+
+
+
+
+eks til ssh key
+
+Microsoft Windows [Version 10.0.19044.2604]
+(c) Microsoft Corporation. Alle rettigheder forbeholdes.
+
+C:\Users\jakob>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\jakob>cd desktop
+
+C:\Users\jakob\Desktop> ssh-keygen.exe
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\jakob/.ssh/id_rsa):
+Created directory 'C:\Users\jakob/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\jakob/.ssh/id_rsa.
+Your public key has been saved in C:\Users\jakob/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:NWQpvaxHyMlBGHhpt6ucK5gej4V1t453HqDbTLOJmnU jakob@DESKTOP-26ONRPF
+The key's randomart image is:
++---[RSA 3072]----+
+|     ..=..o.     |
+|    . = +oo      |
+|     o + Bo.     |
+|        *.+.     |
+|    . . S+       |
+|   o . ooo.      |
+|  oo..ooE..      |
+|  o=.o+X.+..     |
+| .o +o=o*o.      |
++----[SHA256]-----+
+
+C:\Users\jakob\Desktop>cd .\.ssh\
+Den angivne sti blev ikke fundet.
+
+C:\Users\jakob\Desktop>cd..
+
+C:\Users\jakob>cd .ssh
+
+C:\Users\jakob\.ssh>cd ~/.ssh/
+Den angivne sti blev ikke fundet.
+
+C:\Users\jakob\.ssh>
